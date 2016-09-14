@@ -73,6 +73,7 @@ Solr.Faceting.prototype = {
   init: function (manager) {
     this.manager = manager;
     
+    // TODO: React, based on the existence of QueryingJSON skill, or a property defined from it (in the manager).
     var fpars = a$.extend({}, FacetParameters),
         domain = null,
         self = this;
