@@ -1,4 +1,4 @@
-asSys = require("as-sys");
+asSys = require("@thejonan/as-sys");
 Solr = require("../");
 
 a$ = asSys;
