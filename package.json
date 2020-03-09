@@ -1,5 +1,5 @@
 {
-  "name": "solr-jsx",
+  "name": "@ideaconsult/solr-jsx",
   "version": "0.15.8",
   "description": "A lightweight, JavaScript engine for building Solr requests",
   "keywords": [
@@ -41,7 +41,7 @@
     "main": "solr-jsx.js"
   },
   "dependencies": {
-    "as-sys": "git+ssh://git@github.com/thejonan/asSys.js.git"
+    "@thejonan/as-sys": "^1.0.4"
   },
   "devDependencies": {
     "uglify-js": "latest",
