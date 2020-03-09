@@ -41,7 +41,7 @@
     "main": "solr-jsx.js"
   },
   "dependencies": {
-    "@thejonan/as-sys": "^1.0.4"
+    "@thejonan/as-sys": "0.13.3"
   },
   "devDependencies": {
     "uglify-js": "latest",
