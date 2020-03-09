@@ -169,7 +169,7 @@ describe("SolrJsX:", function () {
       
       it("Has built proper json configuration", function () {
         var data = JSON.parse(main.prepareQuery().data);
-        expect(data.facet).toEqual({ "test": { field: "field", type: "terms", mincount: 1, limit: -1 } });
+        expect(data.facet).toEqual({ "test": { field: "field", type: "terms", mincount: 1 } });
       });
       
       it ("Property adds a simple value", function () {
@@ -196,7 +196,7 @@ describe("SolrJsX:", function () {
 
       it("Has built proper json configuration", function () {
         var data = JSON.parse(main.prepareQuery().data);
-        expect(data.facet).toEqual({ "test": { field: "spaced field", type: "terms", mincount: 1, limit: -1 } });
+        expect(data.facet).toEqual({ "test": { field: "spaced field", type: "terms", mincount: 1 } });
       });
       
       it ("Property adds a simple value", function () {
@@ -222,7 +222,7 @@ describe("SolrJsX:", function () {
       
       it("Has built proper json configuration", function () {
         var data = JSON.parse(main.prepareQuery().data);
-        expect(data.facet).toEqual({ "test": { field: "field", type: "terms", mincount: 1, limit: -1, domain: { excludeTags: "test_tag" } } });
+        expect(data.facet).toEqual({ "test": { field: "field", type: "terms", mincount: 1, domain: { excludeTags: "test_tag" } } });
       });
 
       // TODO: Add add/remove/has tests.
